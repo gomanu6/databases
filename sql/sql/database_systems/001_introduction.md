@@ -81,7 +81,11 @@ alter table course add foreign key (c_id) references course (c_id);
 
 
 
+#### Update Data
 
+##### Specific rows to new values
+- UPDATE table_name SET column_name = value WHERE condition
+- changes all rows satisfying condition
 
 
 
