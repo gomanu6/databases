@@ -1,5 +1,7 @@
 
-RG section 7.4
+Buffer Manager : RG section 7.4 
+
+Query Processing: RG Section 12
 
 #### Buffer Manager
 - decides when to move data between disk and ram
@@ -52,7 +54,25 @@ LRU: Least recently used
 - makes lru policy sub-optimal
 
 
+#### Query Processing
+- inout query is parsed (parser) and simplified (rewriter)
+- query optimizer generates optimized execution plan
+- executing plan (executor) produces query result
 
+##### Query Plans
+- describe how to generate required data
+- typically represented as a tree
+- each leaf node represents a database table
+- each inner node represents an operation
+- tree edges represent data flow
+
+##### Operators
+- query plans use fixed set of standard operators
+- consumes relation(s) and produces one relation
+- Filter operator (sigma): discard rows based on condition
+- projection operator(pi): discard columns
+- join operator(): find matching tuple pairs
+- 
 
 
 

@@ -2,6 +2,7 @@
 
 
 RG sec 9
+
 #### Indexes
 
 - Index: auxiliary data structure for finding data faster
